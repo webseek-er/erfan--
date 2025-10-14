@@ -1,0 +1,98 @@
+/* استایل‌های پایه برای کل صفحه */
+body {
+    font-family: Tahoma, sans-serif; /* فونت اصلی صفحه */
+    background: #357dc5; /* رنگ پس‌زمینه کلی صفحه (آبی خیلی روشن) */
+    color: #000000; /* رنگ متن اصلی */
+    line-height: 1.7; /* فاصله بین خطوط */
+    margin: 0; /* حذف حاشیه پیش‌فرض */
+    padding: 20px; /* فاصله داخلی از لبه صفحه */
+}
+
+/* کانتینر اصلی رزومه */
+.resume {
+    max-width: 700px; /* حداکثر عرض رزومه */
+    margin: 0 auto; /*居中 کردن رزومه در صفحه */
+    background: white; /* پس‌زمینه سفید برای رزومه */
+    padding: 30px; /* فاصله داخلی */
+    border-radius: 5px; /* گوشه‌های گرد */
+}
+img {
+    width: 50px;   /* عرض ثابت */
+    height: 50px;  /* ارتفاع ثابت */
+    border-radius: 30px;
+}
+
+/* بخش هدر */
+.header {
+    text-align: center; /* متن در مرکز */
+    margin-bottom: 30px; /* فاصله از بخش بعدی */
+    padding: 30px 20px; /* فاصله داخلی */
+    background: #1e88e5; /* پس‌زمینه آبی */
+    color: white; /* رنگ متن سفید */
+    border-radius: 50px; /* گوشه‌های گرد */
+}
+
+/* استایل نام */
+.name {
+    font-size: 30px; /* سایز فونت بزرگ */
+}
+
+/* استایل عنوان شغلی */
+.title {
+    font-size: 18px; /* سایز فونت متوسط */
+}
+
+/* استایل بخش‌های مختلف رزومه */
+.section {
+    margin: 25px 0; /* فاصله بالا و پایین بین بخش‌ها */
+    border-bottom: 2px solid #1e88e5; /* خط آبی جداکننده بین بخش‌ها */
+}
+
+/* حذف خط از آخرین بخش */
+.section:last-child {
+    border-bottom: none; /* حذف خط جداکننده از آخرین بخش */
+}
+
+/* عنوان هر بخش */
+.section-title {
+    color: #1565c0; /* رنگ آبی برای عنوان بخش */
+    font-size: 20px; /* سایز فونت */
+    margin-bottom: 10px; /* فاصله از محتوای زیرین */
+}
+
+/* لیست مهارت‌ها */
+.skills-list {
+    list-style-type: none; /* حذف نقطه‌های پیش‌فرض لیست */
+    padding: 0; /* حذف فاصله داخلی پیش‌فرض */
+}
+
+/* آیتم‌های لیست مهارت‌ها */
+.skills-list li {
+    margin-bottom: 8px; /* فاصله بین آیتم‌ها */
+    padding-right: 15px; /* فاصله داخلی از راست */
+    color: #1565c0; /* رنگ آبی برای متن مهارت‌ها */
+}
+
+/* ایجاد نقطه دلخواه برای لیست */
+.skills-list li:before {
+    content: "• "; /* استفاده از نقطه به جای نقطه پیش‌فرض */
+    color: #1565c0; /* رنگ آبی برای نقطه */
+    font-weight: bold; /* نقطه پررنگ */
+}
+
+/* بخش تماس */
+.contact {
+    text-align: center; /* متن در مرکز */
+    margin-top: 30px; /* فاصله از بالا */
+    padding-top: 20px; /* فاصله داخلی بالا */
+    color: #666; /* رنگ متن خاکستری */
+}
+
+/* استایل ایمیل */
+.email {
+    color: #1565c0; /* رنگ آبی برای ایمیل */
+    font-weight: bold; /* متن پررنگ */
+    direction: ltr; /* جهت متن از چپ به راست برای ایمیل */
+    display: inline-block; /* نمایش به صورت بلوک درون خطی */
+    margin-top: 10px; /* فاصله از بالا */
+}
