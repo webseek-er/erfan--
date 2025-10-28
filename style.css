@@ -1,0 +1,252 @@
+:root {
+    --yaldai-red: #C41E3A;
+    --yaldai-green: #2E8B57;
+    --yaldai-gold: #FFD700;
+    --yaldai-dark: #0C2D48;
+    --yaldai-cream: #FFF8E7;
+}
+
+* {
+    font-family: 'Samim', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, rgba(12, 45, 72, 0.9) 0%, rgba(44, 62, 80, 0.9) 100%);
+    color: var(--yaldai-cream);
+    padding-top: 76px;
+}
+
+/* نوار ناوبری */
+.navbar {
+    background: linear-gradient(135deg, var(--yaldai-dark), var(--yaldai-green)) !important;
+    box-shadow: 0 4px 20px rgba(12, 45, 72, 0.6);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--yaldai-gold) !important;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: var(--yaldai-cream) !important;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--yaldai-gold) !important;
+    transform: translateY(-2px);
+}
+
+/* هدر اصلی */
+.hero-section {
+    background: linear-gradient(135deg, rgba(196, 30, 58, 0.9) 0%, rgba(46, 139, 87, 0.9) 50%, rgba(12, 45, 72, 0.9) 100%);
+    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '🎄 ❄️ ✨';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 30px;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+/* دکمه‌ها */
+.btn-yaldai {
+    background: linear-gradient(45deg, var(--yaldai-red), var(--yaldai-green));
+    border: none;
+    color: white;
+    border-radius: 15px;
+    padding: 12px 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(196, 30, 58, 0.4);
+}
+
+.btn-yaldai:hover {
+    background: linear-gradient(45deg, var(--yaldai-green), var(--yaldai-dark));
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(46, 139, 87, 0.5);
+}
+
+.btn-outline-yaldai {
+    border: 2px solid var(--yaldai-gold);
+    color: var(--yaldai-gold);
+    background: transparent;
+    border-radius: 15px;
+    padding: 12px 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-yaldai:hover {
+    background: var(--yaldai-gold);
+    color: var(--yaldai-dark);
+    transform: translateY(-3px);
+}
+
+/* کارت‌ها */
+.feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.product-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(12, 45, 72, 0.3);
+    transition: all 0.3s ease;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(196, 30, 58, 0.3);
+}
+
+/* درباره ما */
+.about-hero {
+    background: linear-gradient(135deg, rgba(12, 45, 72, 0.9) 0%, rgba(46, 139, 87, 0.9) 100%);
+    padding: 100px 0 50px;
+}
+
+.about-image {
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+.value-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.stat-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--yaldai-gold);
+}
+
+.stat-label {
+    color: var(--yaldai-cream);
+    font-size: 0.9em;
+}
+
+/* فوتر */
+.footer {
+    background: linear-gradient(135deg, var(--yaldai-dark), var(--yaldai-green));
+    color: var(--yaldai-cream);
+}
+
+.footer a {
+    color: var(--yaldai-cream);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: var(--yaldai-gold);
+}
+
+/* رنگ‌های متنی */
+.text-yaldai-red { color: var(--yaldai-red); }
+.text-yaldai-green { color: var(--yaldai-green); }
+.text-yaldai-gold { color: var(--yaldai-gold); }
+.text-yaldai-dark { color: var(--yaldai-dark); }
+
+/* بخش‌ها */
+.section-title {
+    color: var(--yaldai-gold);
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--yaldai-red), var(--yaldai-green));
+}
+
+/* محصولات */
+.product-image {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.price-section {
+    background: rgba(255, 215, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.fake-price {
+    text-decoration: line-through;
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+.real-price {
+    color: var(--yaldai-red);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.discount-badge {
+    background: var(--yaldai-green) !important;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .feature-card {
+        margin-bottom: 20px;
+    }
+    
+    body {
+        padding-top: 70px;
+    }
+}

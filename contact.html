@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما - گالری سنگ‌های یلدایی</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Samim&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-gem me-2"></i>گالری سنگ‌های یلدایی
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">خانه</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">محصولات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">درباره ما</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">تماس با ما</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="contact-hero py-5">
+        <div class="container">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bold mb-3">📞 تماس با ما</h1>
+                <p class="lead">آماده پاسخگویی به سوالات و دریافت نظرات شما هستیم</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- اطلاعات تماس -->
+                <div class="col-lg-4 mb-5">
+                    <div class="contact-info">
+                        <h3 class="mb-4 text-yaldai-gold">📍 اطلاعات تماس</h3>
+                        
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt fa-2x text-yaldai-red"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>آدرس</h5>
+                                <p>تهران، خیابان ولیعصر، پلاک ۱۲۳۴</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone fa-2x text-yaldai-green"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>تلفن</h5>
+                                <p>۰۲۱-۱۲۳۴۵۶۷۸</p>
+                                <p>۰۹۱۲۳۴۵۶۷۸۹</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope fa-2x text-yaldai-gold"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>ایمیل</h5>
+                                <p>info@yaldagallery.com</p>
+                                <p>support@yaldagallery.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock fa-2x text-yaldai-red"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>ساعات کاری</h5>
+                                <p>شنبه تا چهارشنبه: ۹:۰۰ - ۱۸:۰۰</p>
+                                <p>پنجشنبه: ۹:۰۰ - ۱۴:۰۰</p>
+                                <p>جمعه: تعطیل</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- شبکه‌های اجتماعی -->
+                    <div class="social-links mt-5">
+                        <h4 class="mb-3 text-yaldai-gold">🌐 ما را دنبال کنید</h4>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="social-link whatsapp">
+                                <i class="fab fa-whatsapp fa-2x"></i>
+                            </a>
+                            <a href="#" class="social-link instagram">
+                                <i class="fab fa-instagram fa-2x"></i>
+                            </a>
+                            <a href="#" class="social-link telegram">
+                                <i class="fab fa-telegram fa-2x"></i>
+                            </a>
+                            <a href="#" class="social-link email">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- فرم تماس -->
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h3 class="mb-4 text-yaldai-gold">✉️ پیام به ما</h3>
+                        <form id="contactForm" onsubmit="handleContactForm(event)">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">نام کامل *</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">ایمیل *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">شماره تماس</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="subject" class="form-label">موضوع *</label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="">انتخاب موضوع</option>
+                                        <option value="order">سفارش محصول</option>
+                                        <option value="support">پشتیبانی</option>
+                                        <option value="complaint">انتقاد و پیشنهاد</option>
+                                        <option value="cooperation">همکاری</option>
+                                        <option value="other">سایر</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">پیام شما *</label>
+                                <textarea class="form-control" id="message" rows="5" required placeholder="پیام خود را اینجا بنویسید..."></textarea>
+                            </div>
+                            
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="newsletter">
+                                <label class="form-check-label" for="newsletter">
+                                    مایلم از جدیدترین محصولات و تخفیف‌ها مطلع شوم
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-yaldai btn-lg w-100">
+                                <i class="fas fa-paper-plane me-2"></i>ارسال پیام
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- نقشه -->
+    <section class="map-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">🗺️ نقشه دسترسی</h2>
+            </div>
+            <div class="map-placeholder">
+                <div class="map-content text-center py-5">
+                    <i class="fas fa-map-marked-alt fa-5x text-yaldai-red mb-3"></i>
+                    <h4>نقشه گوگل</h4>
+                    <p class="text-muted">اینجا نقشه گوگل نمایش داده می‌شود</p>
+                    <button class="btn btn-outline-yaldai mt-3">
+                        <i class="fas fa-external-link-alt me-2"></i>مشاهده در Google Maps
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-4">
+        <div class="container text-center">
+            <p class="mb-0">© ۲۰۲۴ گالری سنگ‌های یلدایی. تمام حقوق محفوظ است.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
